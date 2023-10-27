@@ -1,3 +1,57 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["prettier", "next/core-web-vitals"],
+  "rules": {
+    "no-shadow": "off",
+    "no-console": "warn",
+    "@typescript-eslint/no-shadow": ["warn"],
+    "react/function-component-definition": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/prefer-interface": "off",
+    "arrow-body-style": ["off"],
+    "prefer-arrow-callback": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": ["/ <reference"]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["../../../"]
+      }
+    ]
+  }
 }
