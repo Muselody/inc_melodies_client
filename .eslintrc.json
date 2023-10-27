@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["prettier", "next/core-web-vitals"],
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   "rules": {
     "no-shadow": "off",
     "no-console": "warn",
